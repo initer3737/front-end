@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: black;
+    }
+    img{
+      width: 500px;
+      border-bottom: 2px solid greenyellow;
+      padding-bottom: 20px;
+      border-right: 2px solid greenyellow;
+      padding-right: 20px;
+      border-radius: 10px;
+      height: 460px;
+      position:absolute;
+      left: 25vw;
+      top: 1vh;
+      margin-top: 42px;
+      transition: all ease;
+      animation: slide 3s ease-in-out infinite;
+    }
+    @keyframes slide {
+        from{
+          transform: translateX(2px);
+        } to{
+          transform: translateX(0px);
+        }
+    }
+    button{
+      outline: none;
+      color: white;
+      border:none;
+      width: 120px;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: transparent;
+      border-bottom: 2px solid green;
+      border-left: 2px solid green;
+      transition: all 400ms;
+      padding: 20px 12px;
+    }
+    button:hover{
+      border-bottom: 2px solid greenyellow;
+      border-left: 2px solid greenyellow;
+
+    }
+    button:nth-child(2){
+      position: absolute;
+      left: 50px;
+      top: 20vh;
+    }
+    button:nth-child(3){
+      position: absolute;
+      right: 50px;
+      top: 20vh;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/1.jpg" class="gambar" alt="">
+  <button id="prev">prev</button>
+  <button id="next">next</button>
+        <div id="count"></div>
+  <script>
+      const nextBtn=document.querySelector("#next")
+      const prevBtn=document.querySelector("#prev")
+      const img=document.querySelector(".gambar")
+      let counter=0;
+      const images=[
+        "images/1.jpg",
+        "images/2.jpg",
+        "images/3.jpg"
+  ]
+      
+      nextBtn.addEventListener('click',()=>{
+           counter>=images.length-1?counter=0: counter++
+            img.src=images[counter]
+      })
+
+      prevBtn.addEventListener('click',()=>{
+           counter>0?counter--:counter=images.length-1
+            img.src=images[counter]
+      })
+
+      setInterval(()=>{
+          counter >= images.length-1?counter=0:counter++
+          img.src=images[counter]
+      },4000)
+  </script>
+</body>
+</html>
