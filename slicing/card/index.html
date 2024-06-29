@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ECF8FF;
+            background-color: black;
+        }
+        .card-container{
+            width: 500px;
+            background-color: #141D26;
+            border-radius: 10px;
+            position: relative;
+            padding: 20px 13px;
+        }
+
+        .profile-container{
+            display: flex;
+            justify-content:flex-start;
+            margin-left: 18px;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .profile-container img{
+            width: 80px;
+            height: 80px;
+            border-radius: 80px;
+        }
+        .icon{
+            position: absolute;
+            right: 20px;
+            top:30px;
+            color: darkcyan;
+            font-size: 20px;
+        }
+
+        .content{
+            padding: 16px 20px;
+        }
+        .content a{
+            color: aqua;
+            text-decoration: none;
+        }
+        .footer-content{
+            display: flex;
+            gap: 20px;
+            margin-left: 17px;
+            padding-bottom: 10px;
+        }
+        .like-container{
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="profile-container">
+            <img src="images/avatar.jpg" alt="avatar">
+            <div class="text">
+                <h3>john doe</h3>
+                <p>@realjohndoe</p>
+            </div>
+        </div>
+        <div class="icon"><i class="bi bi-twitter"></i></div>
+        <div class="content">
+            <p>why do they call it 'debug' when it feels more like 'wildly' guessing and
+             hopping for the best? <a href="/">#programming #coding #debugging</a></p>
+        </div>
+        <div class="footer-content">
+            <div class="like-container">
+                <i class="bi bi-heart"></i>
+                <p>650</p>
+            </div>
+            <div class="date">
+                <p>3:40pm - feb 24 , 2022</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
