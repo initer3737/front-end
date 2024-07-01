@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logo-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        .login-container{
+            padding: 15px 12px;
+            display: flex;
+            flex-flow: wrap column;
+            border-top: 2px solid #4475F2;
+            width: 300px;
+            justify-content: center;
+            margin-left:35%;
+            margin-top: 30px;
+        }
+        .title{
+            margin-left: -12x;
+            text-transform: capitalize;
+            margin-bottom: 12px;
+        }
+        .login-container h3{
+            margin-top: 12px;
+        }
+        .login-container p{
+            margin-top: 6px;
+        }
+        .input-username{
+            padding: 6px 0;
+            outline: none;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            margin-top: 12px;
+        }
+        .btn{
+            margin-top: 12px;
+            color: white;
+            padding: 15px 12px;
+            border-radius: 6px;
+            background-color: #4475F2;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="images/Logo2.png" alt="" class="logo">
+    </div>
+    <div class="login-container">
+        <p class="title"><span style="color: #4737FF;">home</span>/ <span style="color: #5E6282;">login</span></p>
+        <h3 style="color: #181E4B;">Login</h3>
+        <p style="color: #5E6282;">input your username and password</p>
+        <h3 style="color: #181E4B;">username</h3>
+        <input type="text" placeholder="username" class="input-username">
+        <h3 style="color: #181E4B;">password</h3>
+        <input type="text" placeholder="password" class="input-username">
+        <button class="btn">Login</button>
+    </div>
+</body>
+</html>
