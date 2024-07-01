@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px; 
+            height: 100vh;
+        }
+        .gender-container{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 12px;
+        }
+        .signup-container{
+            border-top: #4737FF 1px solid;
+            width: 300px;
+            margin-left: 12px;
+            padding-top: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            text-transform: capitalize;
+        }
+        .btn{
+            width: 300px;
+            padding: 10px 15px;
+            background-color: #4475F2;
+            border: none;
+            box-shadow: 0px 0px 5px black;
+            cursor: pointer;
+            color: white;
+        }
+        .btn:active{
+            position: relative;
+            top: 8px;
+        }
+        .form-container{
+            display: flex;
+            justify-content: space-between;
+            gap: 23px;
+        }
+        .gender-choise{
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+        input[type="text"]{
+            border: none;
+            padding: 5px 13px;
+            border-bottom: #4475F2 1px solid;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="images/Logo2.png" alt="" class="logo">
+    </div>
+    <div class="signup-container">
+        <p class="title"><span style="color: #4737FF;">home</span>/ <span style="color: #5E6282;">sign up</span></p>
+            <h3 style="color: #181E4B;">sign-up</h3>
+            <p style="color: #5E6282;">Register yourself to do something on Lidia.</p>
+            <div class="form-container">
+                <div class="left">
+                    <label for="fullname">full name</label>
+                    <input type="text" placeholder="fullname" id="fullname">
+                    <label for="username">username</label>
+                    <input type="text" placeholder="username" id="username">
+                    <label for="phone">phone</label>
+                    <input type="text" placeholder="phone" id="phone">
+                    <label for="address">address</label>
+                    <input type="text" placeholder="address" id="address">
+                    <label for="password">password</label>
+                    <input type="text" placeholder="password" id="password">
+                </div>
+                <div class="right">
+                    <label for="nik">nik</label>
+                    <input type="text" placeholder="nik" id="nik">
+                    <label for="email">email</label>
+                    <input type="text" placeholder="email" id="email">
+                    <label for="born">born</label>
+                    <input type="text" placeholder="born" id="born">
+                    <label for="gender">gender</label>
+                    <div class="gender-choise">
+                        <input type="radio" id="female" name="gender-choise" > 
+                        <label for="female">female</label>
+                        <input type="radio" id="male" name="gender-choise" > 
+                        <label for="male">male</label>
+                        
+
+                    </div>
+                    <label for="confirm">confirm password</label>
+                    <input type="text" placeholder="confirm password" id="confirm">
+                </div>
+            </div>
+        <button class="btn">sign-up</button>
+    </div>
+</body>
+</html>
