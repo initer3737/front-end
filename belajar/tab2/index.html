@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tabs{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .d-none{display: none;}
+        .tab__label{
+            margin-left: 15px;
+        }
+        .btn__radio:checked ~ .tab-contents {
+            display: initial;
+        }
+        .btn__radio:checked + .tab__label {
+            border-bottom: 2px solid green;
+        }
+        .tab-contents{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <input type="radio" name="tab-btn" id="tab1" class="btn__radio">
+        <label for="tab1" class="tab__label">tab1</label>
+        <div class="tab-contents">
+            <h2>Lorem, ipsum dolor.</h2>
+        </div>
+
+            <input type="radio" name="tab-btn" id="tab2" class="btn__radio">
+            <label for="tab2" class="tab__label">tab2</label>
+            <div class="tab-contents">
+                <h2>Lorem, ipsum dolor.</h2>
+            </div>
+    </div>
+</body>
+</html>

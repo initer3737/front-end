@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        body{
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 600px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+        }   
+        .tab_box{
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            border-bottom:2px solid white ;
+        }
+        .tab_box.tab_btn{
+            font-size: 18px;
+            font-weight: 600;
+            color: #ddd;
+            background: none;
+            border:none;
+            padding:15px;
+            cursor: pointer ;
+        }
+        .tab_box.tab_btn.active{
+            color: blue;
+            background-color: black;
+        }
+        .content_box{
+            padding: 20px;
+        }
+        .content_box.content{
+            display: none;
+        }
+        .content_box.content h2{
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+<body>
+    <iframe width="581" height="327" src="https://www.youtube.com/embed/nlOmgBHnLqQ" title="How to create Tabs using HTML, CSS, and JAVASCRIPT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container">
+        <div class="tab_box">
+            <button class="tab_btn">
+                home
+            </button>
+            <button class="tab_btn">
+                home
+            </button>
+            <button class="tab_btn">
+                home
+            </button>
+            <button class="tab_btn">
+                home
+            </button>
+
+            <div class="content_box">
+                <div class="content">
+                    <h2>home</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi ex labore?</p>
+
+                </div>
+                <div class="content">
+                    <h2>home</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi ex labore?</p>
+
+                </div>
+                <div class="content">
+                    <h2>home</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi ex labore?</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const tabs=document.querySelectorAll('.tab_btn')
+        const content=document.querySelectorAll('.content')
+        tabs.forEach((tab,index)=>{
+            tab.addEventListener('click',()=>{
+                tabs.forEach((tab)=>{
+                    tab.classList.remove('active')
+                })
+                tab.classList.add('active')
+                
+            })
+        })
+    </script>
+</body>
+</html>
