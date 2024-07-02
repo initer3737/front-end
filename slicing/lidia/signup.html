@@ -62,6 +62,10 @@
             border-bottom: #4475F2 1px solid;
             outline: none;
         }
+        .column{
+            display: flex;
+            flex-flow: wrap column;
+        }
     </style>
 </head>
 <body>
@@ -90,8 +94,10 @@
                     <input type="text" placeholder="nik" id="nik">
                     <label for="email">email</label>
                     <input type="text" placeholder="email" id="email">
-                    <label for="born">born</label>
-                    <input type="text" placeholder="born" id="born">
+                    <div class="column">
+                        <label for="born">born</label>
+                        <input type="date" placeholder="born" id="born">
+                    </div>
                     <label for="gender">gender</label>
                     <div class="gender-choise">
                         <input type="radio" id="female" name="gender-choise" > 
