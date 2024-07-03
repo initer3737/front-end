@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+            body{
+                display: grid;
+                place-content: center;
+                place-items: center;
+                height: 100vh;
+                background-color: #ddd;
+            }
+            .container{
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                padding: 15px 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 7px 7px 12px black ;
+            }
+            .container .btn{
+                border: none;
+                padding: 12px 15px;
+                border-radius: 9px;
+                background-color: green;
+                cursor: pointer;
+                box-shadow: 2px 2px 5px black;
+            }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h1 class="judul">sawah</h1>
+            <h2 class="konten">mengenali sawah</h2>
+            <button class="btn">btn</button>
+        </div>
+    <script>
+        const judul=document.querySelector('.judul')
+        const btn=document.querySelector('.btn')
+        const konten=document.querySelector('.konten')
+                let datas=[
+                    {judul:'judul 1',konten:'kontent1'},
+                    {judul:'judul 2',konten:'kontent2'},
+                    {judul:'judul 3',konten:'kontent3'},
+                    {judul:'judul 4',konten:'kontent4'},
+                    {judul:'judul 5',konten:'kontent5'},
+                ]
+
+                btn.addEventListener('click',()=>{
+                    let random=Math.floor(Math.random() * datas.length)
+                    // alert('clicked')
+                    judul.textContent=datas[random].judul
+                    konten.textContent=datas[random].konten
+                })
+    </script>
+</body>
+</html>

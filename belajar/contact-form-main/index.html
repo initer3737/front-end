@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .container h2{
+      padding: 15px 0px;
+    }
+    .container{
+      background-color: #fff;
+      border-radius: 9px;
+      padding: 19px 20px;
+      width: 600px;
+      display: flex;
+      margin: 10px 12px;
+      flex-flow: column;
+      gap: 10px;
+    }
+    .row{
+      display: flex;
+      flex-direction: row;
+    }
+    .column{
+      display: flex;
+      flex-direction: column;
+    }
+    input{
+      border-radius: 4px;
+      border: 1px solid rgb(31, 66, 23);
+    }
+    input:hover{
+      border: 1 solid green;
+
+    }
+    input[type="text"] {
+      padding: 9px 12px;
+    }
+    .field-container{
+      gap: 15px;
+    }
+    .label-check{
+      gap: 12px;
+    }
+    .gap-input{
+      gap: 15px;
+    }
+    button{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border-radius: 6px;
+      border: none;
+      padding: 8px 19px;
+      background-color: #508D4E;
+      color: #fff;
+      transition: all.5s;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: #1A5319;
+    }
+    .message{
+      margin-top: 12px;
+      padding: 25px 0;
+    }
+    .pt{
+      padding: 24px;
+    }
+    .pb-4{
+      padding-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="field-container">
+        <div class="row gap-input pb-4">
+          <div class="column">
+            <label for="first-name" class="pb-4">First Name</label>
+            <input required type="text" id="first-name">
+          </div>
+          <div class="column">
+            <label for="last-name" class="pb-4">Last Name</label>
+            <input required type="text" id="last-name">
+          </div>
+        </div>
+        <div class="column pb-4">
+          <label for="email" class="pb-4">Email Address</label>
+          <input required type="text" id="email">
+        </div>
+          <h4 class="pb-4">Query Type</h4>
+        <div class="row gap-input">
+          <div class="column">
+            <!-- <label for="first-name">query type</label> -->
+            <input placeholder="  General Enquiry
+            " required type="text" id="first-name">
+          </div>
+          <div class="column pb-4">
+            <label for="first-name"></label>
+            <input placeholder="Support Request" required type="text" id="first-name">
+          </div>
+        </div>
+          <label for="first-name"  class="pb-4">message</label>
+        <div class="column pb-4">
+          <textarea class="message" name="" id=""></textarea>
+        </div>
+        <div class="row pt label-check">
+          <input type="checkbox" name="" id="">
+          <p>i consent to being contacted by the team</p>
+        </div>
+        <div class="pt">
+          <button>submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
