@@ -1,0 +1,239 @@
+:root{
+    --primary-900:#6B1915;
+    --primary-700:#A14B38;
+    --primary-500:#E09370;
+    --primary-300:#F5CCAB;
+    --primary-200:#FBE3C9;
+    --primary-100:#FDF2E4;
+ }
+ *{
+  /* border: 2px solid black; */
+ }
+ body{
+  text-transform: capitalize;
+  overflow-x: hidden;
+  /* padding: 0 54px; */
+ }
+ nav{
+    position: relative;
+    padding: 25px 110px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .d-plek{
+  display: flex !important;
+ }
+ .navlink{
+  cursor: pointer;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    transition: all .5s;
+ }
+ .logos{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 13px;
+ }
+ .logo-humberger{
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+ }
+ header.container{
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 120px;
+ }
+ header img{
+  width: 400px;
+ }
+ header button,
+ .see-all{
+  padding: 11px 55px;
+  border-radius: 9px;
+  box-shadow: 0px 0px 5px black;
+  outline: none;
+  border: none;
+  color: black;
+  background-color: var(--primary-500);
+  cursor: pointer;
+  
+ }
+ header p{
+  width: 450px;
+ }
+ .brands img{
+  width: 123px;
+ }
+ .brands{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ }
+ .top-selection-container{
+  display: flex;
+  flex-direction: column;
+  padding: 12px 125px;
+ }
+ .image-container{
+  display: flex;
+  gap: 12px;
+ }
+ .image-content{
+  position: relative;
+ }
+ .title-top-selection{
+  z-index: 134;
+  position: absolute;
+  bottom: 25px;
+  right: 50px;
+  color: white;
+  font-size: 20px;
+ }
+ .image-container img{
+  filter: brightness(55%);
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+ }
+ .row{
+  display: flex;
+  gap: 20px;
+ }
+ .flex-between{
+  display: flex;
+  justify-content: space-between;
+ }
+ .text-filter{
+  opacity: 0.3;
+ }
+ .kuning{
+  color: gold;
+ }
+ .merah{color: red;}
+ .best-seller-container{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-flow: column;
+  width: 100;
+  padding: 12px 15px;
+ }
+ .best-seller-container{
+    padding: 12px 35px;
+    margin-left: 74px;
+ }
+ .best-seller-container img{
+    width: 230px;
+ }
+ .column{
+  display: flex;
+  flex-direction: column;
+ }
+  .footer-menu-container{
+    display: flex;
+  }
+  .footer-menu img:nth-child(2) {
+          display: none;
+      }
+  .footer-menu img:nth-child(1) {
+          display: block;
+      }
+      .subscribe-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 23px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+      }
+      .subscribe-container button{
+        border: none;
+        cursor: pointer;
+      }
+      .subscribe-container h2{
+        text-transform: capitalize;
+        font-size: 3em;
+      }
+      .subscribe-container input{
+        width: 768px;
+        border-radius: 9px;
+      }
+      .sub-title{
+        width: 298px;
+      }
+      footer{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 45px 66px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      footer ul{
+        list-style: none;
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+      }
+      .container-best-seller{
+        display: flex;
+    }
+  @media screen and (max-width:800px) {
+   
+    .container-best-seller{
+        display: flex;
+        overflow-x: auto;
+    }
+  .footer-menu img:nth-child(1) {
+    display: none;
+  }
+      .footer-menu img:nth-child(2) {
+          display: block;
+      }
+      .navlink{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 53px;
+      }
+      .logos{
+        display: flex;
+        flex-direction: column;
+        display: none;
+      }
+      .navlink.hidden{
+        display: none;
+      }
+      .logo-humberger{
+        display: block;
+        position: absolute;
+        top: auto;
+        right:120px;
+      }
+      
+      .container{
+        flex-direction: column-reverse;
+        position: relative;
+      }
+      .container img{
+        margin: 15px -120px;
+      }
+      .brands{
+        flex-wrap: wrap;
+        width: 540px;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-text-container p{
+        width: 250px;
+        font-size: 20px;
+      }
+      .row{
+        flex-direction: column;
+      }
+ }
