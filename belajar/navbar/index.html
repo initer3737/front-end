@@ -6,18 +6,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         ul{
             display: flex;
         }
         ul.active{
             display: none;
         }
+        li{
+            cursor: pointer;
+        }
+        .dropdown{
+            display: none;
+        }
+        .dropdown-container:hover .dropdown{
+            display: block;
+            transition: all .5S;
+        }
+        .hamberger{
+            font-size: 25px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li>about us</li>
+            <li class="dropdown-container">
+                about us
+                <ul class="dropdown">
+                    <li>ppppp</li>
+                    <li>ppppp</li>
+                    <li>ppppp</li>
+                    <li>ppppp</li>
+                    <li>ppppp</li>
+                    <li>ppppp</li>
+                    <li>ppppp</li>
+                    <li>ppppp</li>
+                </ul>
+            </li>
             <li>about us</li>
             <li>about us</li>
             <li>about us</li>
