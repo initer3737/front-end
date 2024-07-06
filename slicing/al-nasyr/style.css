@@ -1,0 +1,257 @@
+:root{
+    --color-primary:#1DA599;
+    --color-third:#C1FFFA;
+    --color-secondary:#FFC265;
+    --color-secondary-transparent:rgba(255, 194, 101,.5);
+    --color-tersier:#4A4A4A;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    padding: 20px 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu li:hover{
+    color: var(--color-secondary);
+}
+.menu li{
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+}
+.list-white{
+    color: #fff;
+    transition: all .7s;
+}
+.home{
+    color: var(--color-secondary);
+}
+.humberger-menu{
+    display: none;
+}  
+.btn-primary{
+    cursor: pointer;
+    padding: 12px 27px;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--color-secondary);
+} 
+.hero{
+    display: flex;
+    justify-content: space-around;
+    margin: 12px 20px;
+}
+.number1{
+    background-color: var(--color-third);
+    color: var(--color-primary);
+    display: inline;
+    border-radius: 9px;
+    padding: 3px 14px;
+}
+.left h2{
+    line-height: 140%;
+    /* font-weight: 900; */
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+.right img{
+    width: 29vw;
+}
+.about-us-img img{
+    width: 406px;
+}
+.about-us-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 235px;
+}
+.about-us-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-us-lists h2{
+    font-size: 3rem;
+}
+.about-us-lists ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.about-us-lists p{
+    width: 400px;
+}
+h2{
+    color: var(--color-tersier);
+}
+.package-container h2,
+.fasility-container h2{
+    font-size: 3em;
+}
+.fasility-container{
+    margin-bottom: 300px;
+    padding: 45px 200px;
+}
+.fasility-container h2,
+.fasility-container p{
+    text-align: center;
+    padding-top: 6px;
+}
+.package-container{
+    text-align: center;
+}
+.package-container p {
+    font-size: 20px;
+}
+.card-header{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 9px;
+}
+.card-header img{
+    width: 311px;
+    
+}
+.card-packages-container{
+    font-weight: 700;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 200px;
+    margin-top: 20px;
+    gap: 18px;
+    flex-flow: row wrap;
+}
+.span-primary{
+    color: var(--color-primary);
+}
+.facilities{
+    display: flex;
+    flex-flow: wrap column;
+    gap: 6px;
+}
+.badge-content{
+    background-color: var(--color-third);
+    color: var(--color-primary);
+    border-radius: 9px;
+    padding: 5px 15px
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.badge-card{
+    position: relative;;
+    display: flex;
+    justify-content: space-between;
+}
+.level-package{
+    color: var(--color-secondary);
+}
+.soon{
+    color: var(--color-primary);
+    font-size: 20px;
+    padding: 0px 56px;
+}
+.preview-btn{
+    padding: 15px 18px;
+    border-radius: 9px;
+    padding-top: 12px;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    cursor: pointer;
+    transition: all .9s;
+}
+.preview-btn:hover{
+    color: #000;
+    background-color: var(--color-secondary);
+}
+.star-icon{
+    color: yellow;
+}
+.sponsorship-container{
+    margin: 19px 160px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 56px;
+    overflow-x: auto;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.fasility-card-container{
+    padding-top: 30px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.gap{
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.fasility-card-container .card{
+    width: 200px;
+}
+/* responsive */
+@media screen and (max-width:800px) {
+    .right img{
+        width: 100%;
+    }
+    .hero{
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav{
+        position: absolute !important;
+    }
+    nav,
+    .menu{
+        position: relative;
+        justify-content: space-evenly;
+        background-color: var(--color-secondary);
+        gap: 10px;
+        flex-direction: column;
+        transform: translateX(-100vw);
+        transition: all .7s;
+        height: 100vh;
+    }
+    button:hover,.menu li:hover{
+        color: #fff;
+    }
+    nav.active,
+    .menu.active{
+        transform: translateX(0);
+
+    }
+    .humberger-menu{
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 13px;
+        font-size: 25px;
+        z-index: 13;
+        cursor: pointer;
+    }
+}
