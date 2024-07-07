@@ -10,12 +10,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 2px solid black; */
 }
 nav{
     display: flex;
     padding: 20px 25px;
     align-items: center;
     justify-content: space-between;
+}
+.d-none{
+    display: none;
 }
 .menu li:hover{
     color: var(--color-secondary);
@@ -99,15 +103,17 @@ h2{
     color: var(--color-tersier);
 }
 .package-container h2,
-.fasility-container h2{
+.fasility-container h2,
+.galery-container h2{
     font-size: 3em;
 }
 .fasility-container{
-    margin-bottom: 300px;
     padding: 45px 200px;
 }
 .fasility-container h2,
-.fasility-container p{
+.fasility-container p,
+.galery-container h2,
+.galery-container p{
     text-align: center;
     padding-top: 6px;
 }
@@ -132,7 +138,7 @@ h2{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 200px;
+    padding: 0 120px;
     margin-top: 20px;
     gap: 18px;
     flex-flow: row wrap;
@@ -214,13 +220,97 @@ h2{
 .fasility-card-container .card{
     width: 200px;
 }
+.testimonial-container{
+    margin: 12px 200px;
+}
+.testimonial-container h2{
+    text-align: end;
+    font-size: 3em;
+}
+.testi-card-container-1,
+.testi-card-container-2{
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+}
+.galery-container{
+    
+    padding-bottom: 300px;
+}
+footer{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.footer-logo{
+    width: 200px;
+}
+.footer-container{
+    display: flex;
+    padding: 15px 60px;
+    /* gap: 200px; */
+    border-width: 90px;
+    border-bottom: 2px solid #fff;
+}
+.footer-links{
+    display: flex;
+    padding: 20px 0px;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-around;
+}
+.footer-end{
+    padding: 15px 90px;
+}
+.links-container{
+    list-style: none;
+}
 /* responsive */
 @media screen and (max-width:800px) {
+    .testi-card-container-1 img,
+    .testi-card-container-2 img{
+        width: 100%;
+    }
+    .testi-card-container-1,
+    .testi-card-container-2{
+        width: 200px;
+        flex-flow: column;
+    }
+    .fasility-card-container .card{
+        width: 200px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .fasility-container h2{
+        font-size: 2em;
+    }
+    .sponsorship-container{
+        margin: 19px 0px;
+    }
+    .card-packages-container img{
+        width: 400px;
+    }
+    .card-packages-container{
+        padding: 12px 0;
+        justify-content: center;
+    }
+    .package-container{
+        font-size: 10px;
+    }
+    .about-us-container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px 19px;
+        margin: 0;
+    }
+    h2{
+        font-size: 19px;
+    }
     .right img{
         width: 100%;
     }
     .hero{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 10px;
     }
     nav{
