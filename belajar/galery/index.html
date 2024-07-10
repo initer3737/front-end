@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <style>
+    *{
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+      .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 'a a b'
+                              'a a b'
+                              'c c c';
+        gap: 10px;
+      }
+      .slay{
+
+        /* width: 1150px; */
+        /* height: 1150px; */
+        background-color: red;
+      }
+      .slay1{
+        grid-area: a;
+        grid-column: 1 / 4;
+      }
+      .slay2{
+        grid-area: b;
+      }
+      .slay3{
+        grid-area: c;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="slay slay1">slay 1</div>
+    <div class="slay slay2">slay 2</div>
+    <div class="slay slay3">slay 3</div>
+  </div>
+</body>
+</html>
