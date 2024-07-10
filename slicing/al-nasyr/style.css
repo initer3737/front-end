@@ -290,12 +290,22 @@ footer{
     width: 410px;
     height: 450px;
 }
+.testi-heading{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
 /* responsive */
 @media screen and (max-width:800px) {
+    .testi-btn{
+        padding: 0;
+        margin: 0;
+    }
     .images-galery-container{
         flex-direction: column;
     }
-    
+
+    .galeryimg1,
     .img-galery,
     .testi-card-container-1 img,
     .testi-card-container-2 img{
