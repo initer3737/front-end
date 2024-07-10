@@ -253,7 +253,7 @@ h2{
 }
 .galery-container{
     
-    padding-bottom: 300px;
+    padding: 50px 0px;
 }
 footer{
     background-color: var(--color-primary);
