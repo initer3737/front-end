@@ -1,0 +1,265 @@
+:root{
+    --primary:#F58634;
+    --secondary:#676767;
+    --white:#fff;
+    --grey:#828282;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    /* height: 100vh; */
+    /* transform: translateY(-1030px); */
+}
+nav .menu{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+nav .menu li{
+    cursor: pointer;
+}
+ button{
+    border: none;
+    background-color: var(--primary);
+    padding: 15px 29px;
+    cursor: pointer;
+}
+.humberger-menu{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+}
+.hero-header{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.text-hero{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hero-header h2{
+    font-size: 3rem;
+}
+.card-hero{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+    background-color: var(--white);
+    padding: 15px;
+    gap: 20px;
+}
+.card-hero p,
+.menu{
+    color: var(--grey) !important;
+}
+.card-hero.column h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-cards{
+    position: relative;
+}
+.navbar .menu li.active{
+    color: #000;
+}
+/* 800 tablet 500 android */
+.navbar.active,
+nav .menu.active{
+    transform: translateY(0) !important;
+}
+.btn-login{
+    color: var(--white);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+.justify-around{
+    display: flex;
+    justify-content: space-around;
+}
+.reviews-card-container{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-top: 20px;
+}
+.reviews-container{
+    gap: 10px;
+    padding: 0px 30px;
+}
+.sale-houses{
+    /* padding-bottom: 200px; */
+    padding: 30px 30px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.flex-middle-barang1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.gap-10{
+    display: flex;
+    gap: 40px;
+}
+.gap-5{
+    display: flex;
+    gap: 5px;
+}
+.sale-house-content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.color-primary{
+    color: var(--primary) !important;
+}
+.sale-houses p{
+    color: var(--grey);
+}
+.house-card{
+    position: relative;
+}
+.color-secondary{
+    color: var(--secondary);
+}
+.house-detail{
+    position: absolute;
+    bottom: 126px;
+    left: 0px;
+    background-color: var(--white);
+    padding: 15px 12px;
+}
+.house-container{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 12px 15px;
+}
+.like{
+    /* position: absolute;
+    top: 49px;
+    left: 150px; */
+    transform: translateX(310px) translateY(-350px);
+}
+.card{
+    position: relative;
+}
+.reviews-container .card .review-name{
+    background-color: var(--white);
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    padding: 15px;
+}
+.column-deskripsi{
+    gap: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.profile-container{
+    background-color: var(--white);
+    position: absolute;
+    left: 0;
+    bottom:0px ;
+}
+.barang1{
+    object-fit: cover;
+    object-position: center;
+    height: 200px;
+}
+.blog-container{
+    gap: 15px;
+    position: relative;
+}
+.button-footer{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+.button-footer input{
+    width: 400px;
+    border: none;
+    outline: none;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 100px 0;
+    background-color: var(--primary);
+}
+@media screen and (max-width:800px) {
+    .navbar{
+        font-size: 26px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+        height: 100vh;
+        transform: translateY(-1030px);
+    }
+    .humberger-menu{
+        font-size: 2em;
+        display: block;
+        z-index: 13;
+        color: var(--white);
+        background-color: #F58634;
+    }
+    nav .menu,.navbar{
+        flex-direction: column;
+        color: var(--white);
+        background-color: var(--primary);
+        gap: 10px;
+        transition: all .5s;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+}
+
+.debug{
+    padding-bottom: 200px;
+}
