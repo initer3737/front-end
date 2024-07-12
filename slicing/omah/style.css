@@ -116,7 +116,7 @@ nav .menu.active{
 }
 .reviews-container{
     gap: 10px;
-    padding: 0px 30px;
+    padding: 35px 30px;
 }
 .sale-houses{
     /* padding-bottom: 200px; */
@@ -207,6 +207,7 @@ nav .menu.active{
 }
 .blog-container{
     gap: 15px;
+    padding: 15px 0px;
     position: relative;
 }
 .button-footer{
@@ -228,16 +229,20 @@ footer{
     gap: 20px;
     align-items: center;
     padding: 100px 0;
+    margin-top: 30px;
     background-color: var(--primary);
 }
 @media screen and (max-width:800px) {
+    .hero-cards img{
+        width: 100%;
+    }
     .navbar{
         font-size: 26px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         padding-top: 10px;
-        height: 100vh;
+        /* height: 100vh; */
         transform: translateY(-1030px);
     }
     .humberger-menu{
@@ -254,10 +259,26 @@ footer{
         gap: 10px;
         transition: all .5s;
     }
+    .house-container{
+        overflow-x: auto;
+    }
+    .blog-container{
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    .button-footer input{
+        width: 87%;
+    }
+    check{
+        display: flex;
+        flex-direction: column-reverse !important  ;
+    }
 }
 
 @media screen and (max-width:500px) {
-    
+    .card-hero{
+        display: none;
+    }
 }
 
 .debug{
