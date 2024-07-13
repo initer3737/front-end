@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>suxz</title> 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav class="hidden md:flex pt-3 flex justify-around items-center">
+    <nav class="max-[800px]:hidden max-[800px]:flex-col max-[800px]:gap-3 flex pt-3 flex max-[800px]:justify-start justify-around  items-center">
         <div class="logo cursor-pointer">
             <div class="flex items-centar gap-3">
                 <img src="images/favicon.png" class="w-7 " alt="">
-                <h3 class="text-3xl text-black">Suxz</h3>
+                <h3 class="text-3xl text-black font-bold">Suxz</h3>
             </div>
         </div>  
-        <ul class="list-none flex gap-5">
+        <ul class="list-none flex gap-5 max-[800px]:flex-col">
             <li class="color-primary1 hover:text-[#8C82FC] cursor-pointer">Home</li>
             <li class="color-primary1 hover:text-[#8C82FC] cursor-pointer">Learnings</li>
             <li class="color-primary1 hover:text-[#8C82FC] cursor-pointer">About Us</li>
             <li class="color-primary1 hover:text-[#8C82FC] cursor-pointer">Testimonial</li>
         </ul> 
-        <div class="flex gap-3">
+        <div class="flex gap-3 max-[800px]:flex-col">
             <button class="color-primary2 hover:text-[#BAB8D2] cursor-pointer">login</button>
             <button class="bg-primary2 text-white px-4 py-1 rounded hover:text-[#394360] cursor-pointer">sign up</button>
         </div> 
     </nav>
 
-    <div class="hero-container pt-[7rem] flex justify-around">
+        <div class="toggle-navbar absolute top-1 right-[90px] cursor-pointer max-[800px]:flex hidden text-3xl">
+            <i class="bi bi-list"></i>
+        </div>
+
+    <div class="hero-container pt-[7rem] flex justify-around max-[800px]:flex-col-reverse">
         <div class="flex-col">
-            <div class="title">
-                <h3 class="text-[20px] color-primary2">S U X Z  M A K E  I T  E A S Y </h3>
-                <h2 class="text-[64px] color-primary5">Find Your Way <br>
+            <div class="title max-[800px]:pl-3">
+                <h3 class="max-[800px]:text-[1.75em] text-[20px] color-primary2">S U X Z  M A K E  I T  E A S Y </h3>
+                <h2 class="max-[800px]:text-[1.85em] text-[64px] color-primary5 font-bold">Find Your Way <br>
                     Of Success</h2>
                     <p class="text-[20px] text-[#222831]">We help you to increase self-confidence and <br>
                         train yourself in a direction, and make you more <br>
                         creative in developing a work</p>
             </div>
-                <div class="flex gap-4 pt-3">
+                <div class="flex max-[800px]:pl-3 max-[800px]:flex-col gap-4 pt-3">
                     <button class="bg-primary2 text-white px-4 py-1 rounded hover:text-[#394360] cursor-pointer capitalize ">get started</button>
                     <button class="text-[#A2B3BF] px-4 py-1 rounded hover:text-[#394360] cursor-pointer capitalize ">our services</button>
                 </div>
@@ -47,5 +51,182 @@
             <img src="images/header_img.png" class="w-[350px]" alt="">
         </div>
     </div>
+
+    <div class="gap-3 mx-[120px] pb-[200px] py-[40px] flex flex-col">
+        <h5 class="uppercase text-[20px] color-primary2">learnings</h5>
+        <h2 class="text-3xl color-primary5 max-[800px]:text-[25px] font-bold">Online Learning Platform <br>
+            International Curriculum</h2>
+            <p class="text-base color-primary7">Study and understand the material <br>
+                class is more relaxed without time limit.</p>
+           
+            <div class="mt-[40px] flex flex-wrap gap-5">
+                <div class="card hover:text-white px-3 py-3 flex flex-col rounded">
+                    <img src="images/image.png" alt="image" class="w-[80px]">
+                    <div class="mt-3">
+                        <h3 class="py-3">Starter</h3>
+                        <p>Free class access for that <br>
+                            start learning code and <br>
+                            design</p>
+                        <button class="text-white my-3 bg-primary6 px-6 py-1 rounded">See Class</button>
+                    </div>
+                </div>
+                <div class="card hover:text-white px-3 py-3 flex flex-col rounded">
+                    <img src="images/image2.png" alt="image" class="w-[80px]">
+                    <div class="mt-3">
+                        <h3 class="py-3">Premium</h3>
+                        <p>Advanced material from <br>
+                            the Starter & <br>
+                            learn to <br>
+                            build projects</p>
+                        <button class="text-white my-3 bg-primary6 px-6 py-1 rounded">See Class</button>
+                    </div>
+                </div>
+                <div class="card hover:text-white px-3 py-3 flex flex-col rounded">
+                    <img src="images/image3.png" alt="image" class="w-[80px]">
+                    <div class="mt-3">
+                        <h3 class="py-3">Superstar</h3>
+                        <p>Materials for experts <br>
+                            who have completed the <br>
+                            premium package</p>
+                        <button class="text-white my-3 bg-primary6 px-6 py-1 rounded">See Class</button>
+                    </div>
+                </div>
+                <div class="card hover:text-white px-3 py-3 flex flex-col rounded">
+                    <img src="images/image4.png" alt="image" class="w-[80px]">
+                    <div class="mt-3">
+                        <h3 class="py-3">Bootcamp</h3>
+                        <p>Informatics science <br>
+                            training program with <br>
+                            the latest material</p>
+                        <button class="text-white my-3 bg-primary6 px-6 py-1 rounded">See Class</button>
+                    </div>
+                </div>
+            </div>    
+    </div>
+            <!--about us  -->
+    <div class="flex max-[800px]:flex-col gap-[100px] px-[120px]">
+        <img src="images/about_img.png" alt="about" class="">
+        <div class="about-us flex flex-col gap-3">
+            <h3 class="color-primary2 uppercase font-bold">about us</h3>
+            <h2 class="text-3xl max-[800px]:text-[25px] font-bold">We Help Improve <br>
+                Your Work Experience</h2>
+            <p class="text-[15px]">We help you to increase self-confidence <br>
+                    and train yourself in a direction.</p>
+             <ul class="flex flex-col list-none">
+                <li class="flex items-center ">
+                    <img src="images/check.png" alt="">
+                    Study and produce creation to
+                        get a job
+                </li>
+                <li class="flex items-center ">
+                    <img src="images/check.png" alt="">
+                    Up to date material and created by
+                        expert creators
+                </li>
+                <li class="flex items-center ">
+                    <img src="images/check.png" alt="">
+                    Complete classes and projects and
+                    get a certificate from us
+                </li>
+             </ul>       
+        </div>
+    </div>
+
+    <div class="flex flex-col text-center ">
+        <h3 class="text-3xl font-bold">Companies That Recruit Our Graduates</h3>
+        <p class="py-4">Our graduates have worked in more than 400 companies around the World</p>
+        <div class="mt-3 flex flex-col gap-5 justify-center">
+            <div class="flex gap-5 max-[800px]:flex-col max-[800px]:mx-auto flex-wrap justify-center">
+                <img src="images/Github.png" alt="" class="w-[160px] h-[42px]">
+                <img src="images/Medium.png" alt="" class="w-[160px] h-[42px]">
+                <img src="images/redis.png" alt="" class="w-[160px] h-[42px]">
+                <img src="images/Amazon.png" alt="" class="w-[160px] h-[42px] object-cover">
+            </div>
+            <div class="flex gap-5 max-[800px]:flex-col max-[800px]:mx-auto flex-wrap justify-center">
+                <img src="images/paypal.png" alt="" class="w-[160px] h-[42px]">
+                <img src="images/Linkedin.png" alt="" class="w-[160px] h-[42px]">
+                <img src="images/Reddit.png" alt="" class="w-[160px] h-[42px]">
+                <img src="images/Medium.png" alt="" class="w-[160px] h-[42px]">
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-[75px] flex flex-col items-center justify-center gap-3 pl-6 pb-[20px]">
+        <h3 class="color-primary2 uppercase font-bold">testimonial</h3>
+        <h2 class="text-3xl font-bold capitalize">Our Alumni Say</h2>
+        <p class="text-[15px]">These are the words of people who have taken our class</p>
+        
+        <div class="pt-5 flex gap-3 max-[800px]:gap-[36px] pt-[90px] max-[800px]:flex-col">
+            <div class="pt-2 relative">
+                <div class="border-2 border-slate-400 rounded-md w-[240px] height-[345px] p-3">
+                    <img src="images/jason-tod.png" alt="" class="relative left-[25%] -top-[55px]">
+                    <h3 class="text-center">Jean Gray</h3>
+                    <h5 class="text-center color-primary4">Entrepreneur</h5>
+                    <p class="py-4">“The mentor is cool, how
+                        to convey each material
+                        is also detailed and easy
+                        to understand..”</p>
+                </div>  
+            </div>  
+            <div class="pt-2 relative">
+                <div class="border-2 border-slate-400 rounded-md w-[240px] height-[345px] p-3">
+                    <img src="images/cassandra.png" alt="" class="relative left-[25%] -top-[55px]">
+                    <h3 class="text-center">Jean Gray</h3>
+                    <h5 class="text-center color-primary4">Web Developer</h5>
+                    <p class="py-4">“The mentor is cool, how
+                        to convey each material
+                        is also detailed and easy
+                        to understand..”</p>
+                </div>  
+            </div>  
+            <div class="pt-2 relative">
+                <div class="border-2 border-slate-400 rounded-md w-[240px] height-[345px] p-3">
+                    <img src="images/peter-parker.png" alt="" class="relative left-[25%] -top-[55px]">
+                    <h3 class="text-center">Jean Gray</h3>
+                    <h5 class="text-center color-primary4">PHP Enthusiast</h5>
+                    <p class="py-4">“The mentor is cool, how
+                        to convey each material
+                        is also detailed and easy
+                        to understand..”</p>
+                </div>  
+            </div>  
+            <div class="pt-2 relative">
+                <div class="border-2 border-slate-400 rounded-md w-[240px] height-[345px] p-3">
+                    <img src="images/jean-gray.png" alt="" class="relative left-[25%] -top-[55px]">
+                    <h3 class="text-center">Jean Gray</h3>
+                    <h5 class="text-center color-primary4">Designer</h5>
+                    <p class="py-4">“The mentor is cool, how
+                        to convey each material
+                        is also detailed and easy
+                        to understand..”</p>
+                </div>  
+            </div>  
+        </div>
+      
+    </div>
+
+    <div class="pt-4 relative text-white flex justify-center">
+        <div class="z-[90] absolute flex flex-col gap-4 justify-center py-[90px] ">
+            <h2 class="text-3xl font-bold">So? What Are You Waiting For</h2>
+            <p class="text-[18px]">It's time to build your career, study in a relaxed and purposeful manner</p>
+            <div class="flex max-[800px]:pl-3 max-[800px]:flex-col gap-4 pt-3">
+                <button class="bg-primary2 text-white px-4 py-1 rounded hover:text-[#394360] cursor-pointer capitalize ">get started</button>
+                <button class="text-[#A2B3BF] px-4 py-1 rounded hover:text-[#394360] cursor-pointer capitalize ">contact us</button>
+            </div>
+        </div>
+        <img src="images/Rectangle 8.png" alt="" class="brightness-50 w-full">
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    <script>
+        const btn=document.querySelector('.toggle-navbar')
+        const nav=document.querySelector('nav')
+            btn.addEventListener('click',()=>{
+                    nav.classList.toggle('active')
+            })
+    </script>
 </body>
 </html>

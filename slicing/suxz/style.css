@@ -4,6 +4,8 @@
     --color-primary3:#8EF6E4;
     --color-primary4:#BAB8D2;
     --color-primary5:#22293E;
+    --color-primary6:#44E4C9;
+    --color-primary7:#222831;
 }
 .color-primary1{
     color: var(--color-primary1);
@@ -20,6 +22,12 @@
 .color-primary5{
     color: var(--color-primary5);
 }
+.color-primary6{
+    color: var(--color-primary6);
+}
+.color-primary7{
+    color: var(--color-primary7);
+}
 
 .bg-primary1{
     background-color: var(--color-primary1);
@@ -35,4 +43,24 @@
 }
 .bg-primary5{
     background-color: var(--color-primary5);
+}
+
+.bg-primary6{
+    background-color: var(--color-primary6);
+}
+.bg-primary7{
+    background-color: var(--color-primary7);
+}
+
+.active{
+    display: flex !important;
+}
+nav{
+    transition: all .5s;
+}
+.card{
+    transition: all 1.5s;
+}
+.card:hover{
+    background-color:var(--color-primary2) ;
 }
