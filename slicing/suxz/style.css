@@ -1,0 +1,38 @@
+:root{
+    --color-primary1:#394360;
+    --color-primary2:#8C82FC;
+    --color-primary3:#8EF6E4;
+    --color-primary4:#BAB8D2;
+    --color-primary5:#22293E;
+}
+.color-primary1{
+    color: var(--color-primary1);
+}
+.color-primary2{
+    color: var(--color-primary2);
+}
+.color-primary3{
+    color: var(--color-primary3);
+}
+.color-primary4{
+    color: var(--color-primary4);
+}
+.color-primary5{
+    color: var(--color-primary5);
+}
+
+.bg-primary1{
+    background-color: var(--color-primary1);
+}
+.bg-primary2{
+    background-color: var(--color-primary2);
+}
+.bg-primary3{
+    background-color: var(--color-primary3);
+}
+.bg-primary4{
+    background-color: var(--color-primary4);
+}
+.bg-primary5{
+    background-color: var(--color-primary5);
+}
