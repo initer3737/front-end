@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <i class="bi bi-list hamburger"></i>
+    <!-- <i class="bi bi-x-lg"></i> -->
+
+    <script>
+        const target=document.querySelector('.bi-list')
+        const btn_hamburger=document.querySelector('.hamburger')
+            btn_hamburger.addEventListener('click',()=>{
+                target.classList.toggle('bi-x-lg')
+            })
+    </script>
+</body>
+</html>

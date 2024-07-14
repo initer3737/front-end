@@ -29,7 +29,7 @@
     </nav>
 
         <div class="toggle-navbar absolute top-1 right-[90px] cursor-pointer max-[800px]:flex hidden text-3xl">
-            <i class="bi bi-list"></i>
+            <i class="bi bi-list transition ease-in-out delay-150"></i>
         </div>
 
     <div class="hero-container pt-[7rem] flex justify-around max-[800px]:flex-col-reverse">
@@ -265,9 +265,11 @@
     </footer>
     <script>
         const btn=document.querySelector('.toggle-navbar')
+        const list=document.querySelector('.bi-list')
         const nav=document.querySelector('nav')
             btn.addEventListener('click',()=>{
                     nav.classList.toggle('active')
+                    list.classList.toggle('bi-x-lg')
             })
     </script>
 </body>
