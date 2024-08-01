@@ -1,0 +1,30 @@
+:root{
+    --color-white:#fff;
+    --color-orenji:#ff7420;
+    --color-black:#191A19;
+}
+
+.bg-orenji{
+    background-color: var(--color-orenji);
+}
+.bg-black{
+    background-color: var(--color-black);
+}
+.bg-white{
+    background-color: var(--color-white);
+}
+.color-orenji{
+    color: var(--color-orenji);
+}
+.color-black{
+    color: var(--color-black);
+}
+.color-white{
+    color: var(--color-white);
+}
+body{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: "poppins",sans-serif;
+    height: 100vh;
+}
